@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChatX</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fcm_api_key">AAAA4fjavJA:APA91bGM-VA650h5uEJn3kaOjaK3_fmkQvTfp6Am0FWj7ub7JWRdVdd0iz6klFHm-yBnlpChXgKc1NASYiskcWUshGaeDi22gePHHkitd5XHMrSagWI7o6yuBlPwkzdSvYvvZlqcdBow</string>
+</resources>

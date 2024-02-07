@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "970542726288",
+    "firebase_url": "https://chatx-96fa6-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "chatx-96fa6",
+    "storage_bucket": "chatx-96fa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970542726288:android:c9539ccfd0f89fe6f72c15",
+        "android_client_info": {
+          "package_name": "com.example.chatx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEVxhPAHQ3cdFkJRe4BvzxlXx86iraoFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
