@@ -7,7 +7,7 @@ Welcome to ChatX, your go-to platform for seamless and secure communication!
 
 - User signup and authentication
 - Seamless chat functionality
-= Lightweight and user-friendly design
+- Lightweight and user-friendly design
 
 
 ## Screenshots
