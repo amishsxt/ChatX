@@ -15,7 +15,7 @@
             android:id="@+id/splashText"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:text="Splash Screen"
+            android:text="ChatX"
             android:textSize="@dimen/_18sdp"
             android:textColor="@color/white"
             android:fontFamily="@font/f_medium"
