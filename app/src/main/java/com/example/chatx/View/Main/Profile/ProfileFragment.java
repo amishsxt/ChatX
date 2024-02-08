@@ -117,7 +117,7 @@ public class ProfileFragment extends Fragment {
 
     private void writeLoginStatus(boolean bool){
         // Get the SharedPreferences instance
-        SharedPreferences sharedPreferences = getContext().getSharedPreferences("AuthPrefs", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getContext().getSharedPreferences("ChatXAuthPrefs", Context.MODE_PRIVATE);
 
         // Write the login status
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -152,13 +152,14 @@ public class ProfileFragment extends Fragment {
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()){
                             Log.d("deleteFCMToken", "Token deleted");
-                            logoutUser();
                         }
                         else{
                             Log.d("deleteFCMToken", "Token deletion failed");
                         }
                     }
                 });
+
+        logoutUser();
     }
 
     private void setPicture(ImageView imageView, Uri imageUri){

@@ -91,7 +91,7 @@ public class SplashActivity extends AppCompatActivity {
     private void checkLoginStatus(){
 
         // Get the SharedPreferences instance
-        SharedPreferences sharedPreferences = getSharedPreferences("AuthPrefs", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("ChatXAuthPrefs", Context.MODE_PRIVATE);
 
         // Retrieve the login status
         boolean isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false);

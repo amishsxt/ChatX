@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 
 import com.example.chatx.Model.DataModels.User;
 import com.example.chatx.Utils.Callbacks.AuthCallback;
+import com.example.chatx.Utils.FirebaseUtil;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -15,6 +16,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.Tasks;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
@@ -60,7 +63,15 @@ public class AuthRepo {
                             Log.d("userLogin", "login failed");
                             Log.d("login failed error", task.getException().getMessage().toString());
 
-                            authCallback.onFailure(task.getException().getMessage().toString());
+
+                            if(task.getException() instanceof FirebaseAuthInvalidUserException){
+                                authCallback.onFailure("Email is not registered");
+                            }
+                            else if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
+                                authCallback.onFailure("Incorrect password or email");
+                            } else {
+                                authCallback.onFailure(task.getException().getMessage().toString());
+                            }
                         }
                     }
                 });

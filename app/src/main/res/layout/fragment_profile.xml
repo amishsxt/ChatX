@@ -90,27 +90,27 @@
                 app:strokeColor="@color/white"
                 android:layout_marginTop="10dp"/>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/settingsBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Settings"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/black"
-                app:strokeWidth="1dp"
-                app:strokeColor="@color/white"
-                android:layout_marginTop="10dp"/>
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/settingsBtn"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Settings"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:backgroundTint="@color/black"-->
+<!--                app:strokeWidth="1dp"-->
+<!--                app:strokeColor="@color/white"-->
+<!--                android:layout_marginTop="10dp"/>-->
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/aboutUsBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="About US"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/black"
-                app:strokeWidth="1dp"
-                app:strokeColor="@color/white"
-                android:layout_marginTop="10dp"/>
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/aboutUsBtn"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="About US"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:backgroundTint="@color/black"-->
+<!--                app:strokeWidth="1dp"-->
+<!--                app:strokeColor="@color/white"-->
+<!--                android:layout_marginTop="10dp"/>-->
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/logOutBtn"

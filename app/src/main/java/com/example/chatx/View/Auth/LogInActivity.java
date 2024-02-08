@@ -75,7 +75,7 @@ public class LogInActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(String ex) {
-                Toast.makeText(LogInActivity.this, "Login failed!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LogInActivity.this, ex, Toast.LENGTH_SHORT).show();
                 hideProgressBar();
             }
         });
@@ -94,7 +94,7 @@ public class LogInActivity extends AppCompatActivity {
 
     private void writeLoginStatus(boolean bool){
         // Get the SharedPreferences instance
-        SharedPreferences sharedPreferences = getSharedPreferences("AuthPrefs", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("ChatXAuthPrefs", Context.MODE_PRIVATE);
 
         // Write the login status
         SharedPreferences.Editor editor = sharedPreferences.edit();
